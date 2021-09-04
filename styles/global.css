@@ -1,0 +1,22 @@
+@tailwind components;
+
+@layer components {
+  .hero__images {
+    @apply w-[55%] h-52 object-contain rounded-lg absolute z-10 transition duration-500 ease-in-out;
+  }
+
+  .image__one {
+    @apply left-0 top-[-2rem] hover:z-20 hover:shadow-xl hover:border-4 hover:border-green-400 hover:p-3;
+  }
+
+  .image__two {
+    @apply right-0 top-5 hover:z-20 hover:shadow-xl hover:border-4 hover:border-green-400 hover:p-3;
+  }
+
+  .image__three {
+    @apply left-[20%] top-28 lg:top-40 hover:z-20 hover:shadow-xl hover:border-4 hover:border-green-400 hover:p-3;
+  }
+  .image__container {
+    @apply space-y-3 relative lg:mt-10;
+  }
+}
