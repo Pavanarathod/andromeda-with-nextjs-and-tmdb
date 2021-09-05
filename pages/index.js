@@ -6,6 +6,8 @@ import axios from "../utils/axios";
 import requests from "../utils/requests";
 import Free from "../components/Free";
 import ImaageCollection from "../components/ImageCollection";
+import Watch from "../components/Watch";
+import Price from "../components/Price";
 
 export default function Home({ populer, freeTwoWatch, collections }) {
   return (
@@ -20,7 +22,9 @@ export default function Home({ populer, freeTwoWatch, collections }) {
         <HeroSeaction />
         <ImaageCollection images={collections} />
         <Populer populer={populer} />
+        <Watch />
         <Free free={freeTwoWatch} />
+        <Price />
       </main>
     </div>
   );

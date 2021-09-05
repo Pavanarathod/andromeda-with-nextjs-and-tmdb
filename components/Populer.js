@@ -4,7 +4,7 @@ const Populer = ({ populer }) => {
   return (
     <section className="px-5 py-5">
       <div className="pb-3">
-        <h1 className="text-2xl font-mono text-green-400">What's Populer</h1>
+        <h1 className="text-2xl font-sans">What's Populer</h1>
       </div>
 
       <div className="grid grid-cols-2 sm:grid-cols-5 lg:grid-cols-8 sm:gap-5">

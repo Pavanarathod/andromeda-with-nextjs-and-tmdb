@@ -1,0 +1,17 @@
+@tailwind components;
+
+@layer components {
+  .price__container {
+    @apply py-5 px-5  sm:max-w-6xl sm:mx-auto sm:grid sm:grid-cols-3 sm:gap-5;
+  }
+  .one {
+    @apply border bg-white border-gray-200 shadow-xl h-[25rem] sm:h-[30rem] mt-3 rounded-md;
+  }
+  .two {
+    @apply border border-gray-200 shadow-xl h-[25rem] sm:h-[33rem] rounded-md;
+  }
+
+  .price__offer {
+    @apply flex justify-center items-center space-x-5;
+  }
+}
