@@ -19,4 +19,14 @@
   .image__container {
     @apply space-y-3 relative lg:mt-10;
   }
+
+  .sponcer__images {
+    @apply h-24 sm:h-36;
+  }
+}
+
+.populer__container {
+  display: flex;
+  flex-grow: scroll;
+  overflow-x: scroll;
 }

@@ -2,7 +2,7 @@ import Button from "./Button/Button";
 
 const HeroSeaction = () => {
   return (
-    <div className="lg:pt-10 py-5 h-screen lg:h-[90vh]">
+    <div className="lg:pt-10 py-5 lg:h-[90vh]">
       <section className="sm:grid sm:grid-cols-2">
         <div className="space-y-5 px-3 lg:px-0">
           <h3 className=" text-7xl lg:text-8xl font-thin">
@@ -13,10 +13,9 @@ const HeroSeaction = () => {
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos
             dolorem accusantium vitae incidunt obcaecati! Voluptates.
           </p>
-
           <Button>Subscribe</Button>
         </div>
-        <div className="px-3 lg:px-0">
+        <div className="hidden sm:block px-3 lg:px-0">
           <div className="image__container">
             <img
               src="/images/img1.jpg"
