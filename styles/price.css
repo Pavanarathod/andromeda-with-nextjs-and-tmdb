@@ -5,13 +5,17 @@
     @apply py-5 px-5  sm:max-w-6xl sm:mx-auto sm:grid sm:grid-cols-3 sm:gap-5;
   }
   .one {
-    @apply border bg-white border-gray-200 shadow-xl h-[25rem] sm:h-[30rem] mt-3 rounded-md;
+    @apply border bg-white border-gray-200 mb-3 shadow-md h-[25rem] sm:h-[30rem] mt-3 rounded-md;
   }
   .two {
-    @apply border border-gray-200 shadow-xl h-[25rem] sm:h-[33rem] rounded-md;
+    @apply border border-gray-200 shadow-xl h-[33rem] rounded-md;
   }
 
   .price__offer {
     @apply flex justify-center items-center space-x-5;
+  }
+
+  .price__button {
+    @apply bg-green-400 py-3 rounded-full text-white font-mono w-full group-hover:bg-green-500;
   }
 }
