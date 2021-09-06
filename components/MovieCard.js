@@ -1,10 +1,32 @@
 import moment from "moment";
+import { useRouter } from "next/router";
+import { useDispatch } from "react-redux";
+import { movieActions } from "../fetures/movieSlice";
 
-const MovieCard = ({ image, title, releaseDate }) => {
+const MovieCard = ({ image, title, releaseDate, id }) => {
   const imageUrl = "https://image.tmdb.org/t/p/original";
+  const dispatch = useDispatch();
+  const router = useRouter();
+
+  const movieDetail = () => {
+    dispatch(
+      movieActions.setMovieData({
+        image,
+        title,
+        releaseDate,
+      })
+    );
+
+    router.push({
+      pathname: `/detail/${id}`,
+    });
+  };
 
   return (
-    <div className="group p-1 transition ease-in transform sm:hover:scale-105 cursor-pointer">
+    <div
+      onClick={movieDetail}
+      className="group p-1 transition ease-in transform sm:hover:scale-105 cursor-pointer"
+    >
       <div>
         <img
           src={`${imageUrl}${image}`}

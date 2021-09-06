@@ -10,6 +10,7 @@ const Free = ({ free }) => {
         {free?.results.slice(0, 8).map((movie) => (
           <MovieCard
             key={movie.id}
+            id={movie.id}
             image={movie.poster_path}
             title={movie.name || movie.original_name || movie.title}
             releaseDate={movie.release_date || movie.first_air_date}
